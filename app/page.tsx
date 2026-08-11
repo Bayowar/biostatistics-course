@@ -19,11 +19,11 @@ const MODULES = [
   },
   {
     number: "03",
-    slug: null,
+    slug: "/module-3",
     title: "Probability",
     description:
       "Conditional probability, decision trees, and the addition and product rules.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "04",
