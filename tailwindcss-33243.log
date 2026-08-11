@@ -1,0 +1,47 @@
+2026-08-09T01:42:15.803789Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-08-09T01:42:15.804765Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course", pattern: "**/*", negated: false }
+2026-08-09T01:42:15.809533Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-08-09T01:42:15.809548Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course" }
+2026-08-09T01:42:15.810566Z  INFO discover_sources: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.810602Z  INFO discover_sources:walk_synchronous: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.813200Z  INFO discover_sources:walk_synchronous: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.813803Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/app/layout.tsx"
+2026-08-09T01:42:15.813852Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/postcss.config.mjs"
+2026-08-09T01:42:15.813867Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/package.json"
+2026-08-09T01:42:15.813878Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/LICENSE"
+2026-08-09T01:42:15.813876Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/public/globe.svg"
+2026-08-09T01:42:15.813914Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/tsconfig.json"
+2026-08-09T01:42:15.813918Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/public/window.svg"
+2026-08-09T01:42:15.814826Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/eslint.config.mjs"
+2026-08-09T01:42:15.814828Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/README.md"
+2026-08-09T01:42:15.814829Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/public/next.svg"
+2026-08-09T01:42:15.814828Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/CLAUDE.md"
+2026-08-09T01:42:15.814906Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/public/file.svg"
+2026-08-09T01:42:15.814907Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/app/page.tsx"
+2026-08-09T01:42:15.814837Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/public/vercel.svg"
+2026-08-09T01:42:15.814929Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/AGENTS.md"
+2026-08-09T01:42:15.814985Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/.gitattributes"
+2026-08-09T01:42:15.815000Z  INFO tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/next.config.ts"
+2026-08-09T01:42:15.815047Z  INFO discover_sources: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815056Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815061Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815067Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815177Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815184Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815190Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815195Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-08-09T01:42:15.815230Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/bayowaonabajo/Documents/GitHub/biostatistics-course/app/globals.css"
+2026-08-09T01:42:15.815241Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815245Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815249Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815273Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815278Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815316Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815389Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815394Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815398Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815448Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.815484Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815489Z  INFO get_globs:discover_sources: tailwindcss_oxide::scanner: enter
+2026-08-09T01:42:15.815493Z  INFO get_globs:discover_sources: tailwindcss_oxide::scanner: exit
+2026-08-09T01:42:15.816493Z  INFO get_globs: tailwindcss_oxide::scanner: exit
