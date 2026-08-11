@@ -49,11 +49,11 @@ const MODULES = [
   },
   {
     number: "07",
-    slug: null,
+    slug: "/module-7",
     title: "Hypothesis Testing",
     description:
       "Sampling methods, the Central Limit Theorem, Type I/II errors, and choosing the right test.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "08",
