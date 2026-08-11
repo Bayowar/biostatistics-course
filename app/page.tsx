@@ -41,11 +41,11 @@ const MODULES = [
   },
   {
     number: "06",
-    slug: null,
+    slug: "/module-6",
     title: "Testing & Screening",
     description:
       "Sensitivity, specificity, likelihood ratios, Bayes' theorem, and ROC curves.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "07",
