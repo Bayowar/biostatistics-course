@@ -57,11 +57,11 @@ const MODULES = [
   },
   {
     number: "08",
-    slug: null,
+    slug: "/module-8",
     title: "Correlation & Regression",
     description:
       "Reading correlation coefficients and regression models, statistical vs. clinical significance.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "09",
