@@ -34,10 +34,10 @@ const MODULES = [
   },
   {
     number: "05",
-    slug: null,
+    slug: "/module-5",
     title: "Measures of Association",
     description: "Relative risk, odds ratio, ARR, NNT, and NNH.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "06",
