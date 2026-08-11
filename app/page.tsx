@@ -65,10 +65,10 @@ const MODULES = [
   },
   {
     number: "09",
-    slug: null,
+    slug: "/module-9",
     title: "Survival Analysis",
     description: "Time-to-event data, Kaplan-Meier curves, and hazard ratios.",
-    status: "soon",
+    status: "available",
   },
 ] as const;
 
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
             );
 
-            return mod.slug ? (
+            return (
               <Link
                 key={mod.number}
                 href={mod.slug}
@@ -135,8 +135,6 @@ export default function Home() {
               >
                 {row}
               </Link>
-            ) : (
-              <div key={mod.number}>{row}</div>
             );
           })}
         </div>
