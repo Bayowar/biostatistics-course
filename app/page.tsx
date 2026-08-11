@@ -27,10 +27,10 @@ const MODULES = [
   },
   {
     number: "04",
-    slug: null,
+    slug: "/module-4",
     title: "Disease Frequency",
     description: "Incidence, prevalence, and their role in public health policy.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "05",
