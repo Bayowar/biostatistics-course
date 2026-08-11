@@ -100,7 +100,7 @@ export default function Module6() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 Medical surveillance in people without symptoms. Assesses
-                disease likelihood but does not diagnose &mdash; a positive
+                disease likelihood but does not diagnose: a positive
                 result merits further diagnostic workup.
               </p>
             </div>
@@ -134,7 +134,7 @@ export default function Module6() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 Screening detects disease earlier, making survival time
-                from diagnosis look longer &mdash; even if the patient
+                from diagnosis look longer: even if the patient
                 dies at the same actual time, and the screening changed
                 nothing.
               </p>
@@ -267,7 +267,7 @@ export default function Module6() {
           <p className="mt-3 text-sm text-slate">
             Try lowering prevalence (fewer disease-positive columns
             relative to disease-negative) while keeping sensitivity and
-            specificity fixed &mdash; watch PPV drop even though the test
+            specificity fixed: watch PPV drop even though the test
             itself didn't change. That's the effect of disease rates on
             predictive value.
           </p>

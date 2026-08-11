@@ -22,7 +22,7 @@ export default function Module7() {
           </h1>
           <p className="mt-4 max-w-xl text-slate">
             Chance is always in the room. This module covers how to decide
-            whether an observed effect is real, or just noise &mdash; and
+            whether an observed effect is real, or just noise: and
             how to pick the right test to make that call.
           </p>
           <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-slate">
@@ -45,7 +45,7 @@ export default function Module7() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 False positive. Rejecting the null when it's actually
-                true &mdash; concluding there's an effect when there
+                true: concluding there's an effect when there
                 isn't. Conventional threshold: &alpha; = 0.05 (5%).
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function Module7() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 False negative. Failing to reject the null when the
-                alternative is true &mdash; missing a real effect.
+                alternative is true: missing a real effect.
                 Conventional threshold: &beta; = 0.2 (20%).
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function Module7() {
             <div className="rounded-lg border border-hairline p-4">
               <p className="text-sm text-ink">
                 <strong>&alpha; &amp; power:</strong> lowering &alpha;
-                reduces Type I errors, but it also reduces power &mdash;
+                reduces Type I errors, but it also reduces power:
                 there's a real tradeoff.
               </p>
             </div>
@@ -150,9 +150,9 @@ export default function Module7() {
             <p className="mt-2 text-sm text-ink">
               The DC Pregnancy Risk Assessment Monitoring System uses
               stratified sampling with three key features: (1){" "}
-              <strong>stratification</strong> &mdash; live births are
+              <strong>stratification</strong>: live births are
               divided into strata by race/ethnicity, age, or geography;
-              (2) <strong>oversampling</strong> &mdash; smaller or
+              (2) <strong>oversampling</strong>: smaller or
               higher-priority subgroups get extra sampling to ensure
               enough data for analysis; (3){" "}
               <strong>random sampling within each stratum</strong>. This
@@ -170,7 +170,7 @@ export default function Module7() {
           <div className="mt-6 rounded-lg border border-hairline bg-ink/[0.02] p-5">
             <p className="text-sm text-ink">
               With a large enough sample size, the sampling distribution
-              of the mean approaches a normal distribution &mdash;{" "}
+              of the mean approaches a normal distribution:{" "}
               <strong>regardless of the shape of the underlying
               population's distribution</strong>. This is what makes most
               of classical hypothesis testing possible in the first
@@ -196,7 +196,7 @@ export default function Module7() {
             <div className="flex gap-4 rounded-lg border border-hairline p-4">
               <span className="font-mono text-sm text-teal">2</span>
               <p className="text-sm text-ink">
-                Choose the significance level, &alpha; &mdash; typically
+                Choose the significance level, &alpha;: typically
                 0.05.
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function Module7() {
                 Independent t-test
               </p>
               <p className="mt-2 text-sm text-ink">
-                Compares the means of two independent groups &mdash; no
+                Compares the means of two independent groups: no
                 related data points across the groups.
               </p>
               <p className="mt-2 text-sm text-slate">
@@ -290,7 +290,7 @@ export default function Module7() {
                 Paired t-test
               </p>
               <p className="mt-2 text-sm text-ink">
-                Compares the means of two related groups &mdash; the same
+                Compares the means of two related groups: the same
                 individuals measured twice.
               </p>
               <p className="mt-2 text-sm text-slate">
@@ -341,7 +341,7 @@ export default function Module7() {
                 Post hoc
               </p>
               <p className="mt-2 text-sm text-ink">
-                Analysis decided after seeing the data &mdash; higher
+                Analysis decided after seeing the data: higher
                 risk of finding spurious patterns, since you can go
                 looking for whatever result appears.
               </p>

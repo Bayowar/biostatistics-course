@@ -50,7 +50,7 @@ export default function Module5() {
           </h1>
           <p className="mt-4 max-w-xl text-slate">
             Once you can count disease, the next question is whether an
-            exposure changes the risk of it &mdash; and by how much, in
+            exposure changes the risk of it: and by how much, in
             terms that actually mean something to a patient.
           </p>
           <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-slate">
@@ -124,7 +124,7 @@ export default function Module5() {
           </div>
           <p className="mt-2 text-sm text-slate">
             RR and OR both describe the strength of an association, but
-            only cohort/RCT designs can produce a true RR &mdash;
+            only cohort/RCT designs can produce a true RR:
             case-control studies sample by outcome, so only OR is valid
             there (though OR approximates RR when the outcome is
             uncommon).
@@ -134,7 +134,7 @@ export default function Module5() {
         {/* RR detail */}
         <section className="mt-12">
           <h2 className="font-display text-2xl font-semibold">
-            Relative Risk &mdash; "how many times"
+            Relative Risk: "how many times"
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             <div className="rounded-lg border border-hairline p-4">
@@ -160,7 +160,7 @@ export default function Module5() {
         {/* OR detail */}
         <section className="mt-12">
           <h2 className="font-display text-2xl font-semibold">
-            Odds Ratio &mdash; the cross-product
+            Odds Ratio: the cross-product
           </h2>
           <p className="mt-2 text-slate">
             The ratio of the odds of exposure among cases to the odds of
@@ -288,7 +288,7 @@ export default function Module5() {
           <p className="mt-2 text-slate">
             NNH = 1 / Attributable Risk, where Attributable Risk =
             Risk(exposed) &minus; Risk(unexposed). An NNH of 10 means for
-            every 10 patients treated, you cause 1 harmful event &mdash;
+            every 10 patients treated, you cause 1 harmful event:
             lower NNH means greater harm.
           </p>
           <p className="mt-3 font-mono text-xs text-amber">
@@ -301,7 +301,7 @@ export default function Module5() {
         {/* Relative vs absolute */}
         <section className="mt-12">
           <h2 className="font-display text-2xl font-semibold">
-            Relative vs. absolute &mdash; the golden rule
+            Relative vs. absolute: the golden rule
           </h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div className="rounded-lg border border-hairline p-5">
@@ -310,7 +310,7 @@ export default function Module5() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 Ratios. Stable across populations with different baseline
-                risks, but can exaggerate perceived impact &mdash; "50%
+                risks, but can exaggerate perceived impact: "50%
                 reduction" sounds dramatic regardless of the starting
                 risk.
               </p>
@@ -364,7 +364,7 @@ export default function Module5() {
               "If 25 patients like you take this medication for 5 years,
               on average one additional heart attack will be prevented.
               The other 24 will see no difference from the drug itself
-              &mdash; but none of us knows in advance which patient that
+             ; but none of us knows in advance which patient that
               will be."
             </p>
           </div>

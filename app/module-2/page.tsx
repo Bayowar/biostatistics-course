@@ -82,7 +82,7 @@ export default function Module2() {
             Central tendency
           </h2>
           <p className="mt-2 text-slate">
-            Three ways to describe the &ldquo;middle&rdquo; of a dataset &mdash;
+            Three ways to describe the &ldquo;middle&rdquo; of a dataset:
             each answering a slightly different question.
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -100,7 +100,7 @@ export default function Module2() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 The middle value when data is ordered. Resistant to outliers
-                &mdash; the better choice for skewed data.
+               : the better choice for skewed data.
               </p>
             </div>
             <div className="rounded-lg border border-hairline p-5">
@@ -146,7 +146,7 @@ export default function Module2() {
                     Standard deviation
                   </td>
                   <td className="px-4 py-3">
-                    Square root of variance &mdash; back in the original
+                    Square root of variance: back in the original
                     units, so it&rsquo;s the one people actually report.
                   </td>
                 </tr>
@@ -215,7 +215,7 @@ export default function Module2() {
           </div>
 
           <p className="mt-4 font-mono text-xs text-amber">
-            68 / 95 / 99.7 rule &mdash; about 68% of values fall within 1 SD
+            68 / 95 / 99.7 rule: about 68% of values fall within 1 SD
             of the mean, 95% within 2 SD, and 99.7% within 3 SD.
           </p>
         </section>
@@ -263,7 +263,7 @@ export default function Module2() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 Extreme measurements tend to be followed by measurements
-                closer to average &mdash; not because of any intervention,
+                closer to average: not because of any intervention,
                 but because extremes are partly due to chance.
               </p>
             </div>
@@ -286,7 +286,7 @@ export default function Module2() {
             </p>
             <p className="mt-3 text-sm text-slate">
               That birthweight is about 2 SD below the mean (z &asymp;
-              &minus;2) &mdash; placing it near the low end of the
+              &minus;2): placing it near the low end of the
               distribution, consistent with the clinical threshold often
               used to flag low birthweight.
             </p>

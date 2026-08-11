@@ -47,7 +47,7 @@ export default function Module3() {
             Probability
           </h1>
           <p className="mt-4 max-w-xl text-slate">
-            The mathematical language for uncertainty &mdash; and the
+            The mathematical language for uncertainty: and the
             foundation every hypothesis test in this course quietly rests
             on.
           </p>
@@ -81,7 +81,7 @@ export default function Module3() {
                 Conditional
               </p>
               <p className="mt-2 text-sm text-ink">
-                P(A | B) &mdash; the probability of A, given that B has
+                P(A | B): the probability of A, given that B has
                 already happened. Knowing B changes what you'd expect for A.
               </p>
             </div>
@@ -117,7 +117,7 @@ export default function Module3() {
                     Addition
                   </td>
                   <td className="px-4 py-3">
-                    P(A or B) &mdash; either event happens
+                    P(A or B): either event happens
                   </td>
                   <td className="px-4 py-3 font-mono text-xs">
                     P(A) + P(B) &minus; P(A and B)
@@ -128,7 +128,7 @@ export default function Module3() {
                     Product
                   </td>
                   <td className="px-4 py-3">
-                    P(A and B) &mdash; both events happen
+                    P(A and B): both events happen
                   </td>
                   <td className="px-4 py-3 font-mono text-xs">
                     P(A) &times; P(B | A)
@@ -149,7 +149,7 @@ export default function Module3() {
           </h2>
           <p className="mt-2 text-slate">
             Each flip is a 50/50 event on its own. But watch what happens to
-            the running probability of heads as you flip more times &mdash;
+            the running probability of heads as you flip more times:
             it wanders early on, then settles in toward 0.5. That
             convergence is the law of large numbers in action.
           </p>

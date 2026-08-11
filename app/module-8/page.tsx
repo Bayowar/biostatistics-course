@@ -109,7 +109,7 @@ export default function Module8() {
           </h1>
           <p className="mt-4 max-w-xl text-slate">
             Correlation tells you two things move together. Regression
-            tells you how much &mdash; and lets you ask that question
+            tells you how much: and lets you ask that question
             while holding everything else constant.
           </p>
           <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-slate">
@@ -233,7 +233,7 @@ export default function Module8() {
             </p>
             <p className="mt-2 text-sm text-slate">
               For every 1 g increase in daily sodium intake, SBP increases
-              by 2.5 mmHg &mdash; holding age and BMI constant. That's the
+              by 2.5 mmHg: holding age and BMI constant. That's the
               key difference from a simple correlation coefficient: a
               multiple regression coefficient is an{" "}
               <strong>adjusted effect</strong>, isolating sodium's
@@ -283,7 +283,7 @@ export default function Module8() {
               Is this finding clinically meaningful?
             </p>
             <p className="mt-2 text-sm text-slate">
-              Statistically significant &mdash; the huge sample size
+              Statistically significant: the huge sample size
               (n=50,000) gives enormous power to detect even a tiny
               difference, and the CI excludes zero. But 1.2 mmHg is far
               below the threshold generally considered clinically

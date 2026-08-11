@@ -40,7 +40,7 @@ export default function Module4() {
           <p className="mt-4 max-w-xl text-slate">
             Before you can compare groups or test hypotheses, you need a way
             to count disease in a population in the first place. Incidence
-            and prevalence answer two different questions &mdash; and
+            and prevalence answer two different questions: and
             confusing them changes what a number actually means.
           </p>
           <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-slate">
@@ -109,7 +109,7 @@ export default function Module4() {
               Disease
             </p>
             <p className="mt-2 text-sm text-slate">
-              Holds when a disease is in "steady state" &mdash; incidence
+              Holds when a disease is in "steady state": incidence
               and prevalence roughly constant over time.
             </p>
           </div>
@@ -267,9 +267,9 @@ export default function Module4() {
               The next year, a new drug is introduced that does not cure
               the disease but extends the average patient's life by
               several years, without changing how many new cases occur
-              annually. What happens? Incidence stays the same &mdash; the
+              annually. What happens? Incidence stays the same: the
               same number of new cases still occur each year. Prevalence
-              rises &mdash; existing cases now live longer, accumulating in
+              rises: existing cases now live longer, accumulating in
               the population instead of being removed by death.
             </p>
           </div>
@@ -283,7 +283,7 @@ export default function Module4() {
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <div className="rounded-lg border border-hairline p-5">
               <p className="font-mono text-xs uppercase tracking-wide text-teal">
-                Prevalence &mdash; the "burden" metric
+                Prevalence: the "burden" metric
               </p>
               <p className="mt-2 text-sm text-ink">
                 Tells officials how many people are currently sick.
@@ -295,7 +295,7 @@ export default function Module4() {
             </div>
             <div className="rounded-lg border border-hairline p-5">
               <p className="font-mono text-xs uppercase tracking-wide text-teal">
-                Incidence &mdash; the "risk" metric
+                Incidence: the "risk" metric
               </p>
               <p className="mt-2 text-sm text-ink">
                 Tells officials how fast new cases are appearing. Triggers
@@ -314,7 +314,7 @@ export default function Module4() {
           </h2>
           <p className="mt-2 text-slate">
             The type of frequency measure you can calculate determines
-            which study design you're allowed to use &mdash; and which
+            which study design you're allowed to use: and which
             measure of association it can produce.
           </p>
           <div className="mt-6 overflow-hidden rounded-lg border border-hairline">
@@ -352,7 +352,7 @@ export default function Module4() {
             In a case-control study, you start with people who already have
             the disease (cases) and people who don't (controls), then look
             backward at exposure. Because patients were selected based on
-            their outcome, you can't calculate incidence &mdash; so the
+            their outcome, you can't calculate incidence: so the
             only valid measure of association is the{" "}
             <strong>Odds Ratio</strong>, not Relative Risk.
           </p>

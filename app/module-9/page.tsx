@@ -201,7 +201,7 @@ export default function Module9() {
             Survival Analysis
           </h1>
           <p className="mt-4 max-w-xl text-slate">
-            Some outcomes aren't just yes/no &mdash; they're about{" "}
+            Some outcomes aren't just yes/no; they're about{" "}
             <em>when</em>. This extension module covers how to analyze
             time-to-event data, including the tricky part: people who
             leave a study before anything happens to them.
@@ -220,7 +220,7 @@ export default function Module9() {
           </h2>
           <p className="mt-2 text-slate">
             Survival analysis measures the time until a specific event
-            occurs &mdash; death, relapse, myocardial infarction, hospital
+            occurs: death, relapse, myocardial infarction, hospital
             discharge, anything with a clear start and endpoint.
           </p>
           <div className="mt-6 rounded-lg border border-hairline bg-ink/[0.02] p-5">
@@ -242,7 +242,7 @@ export default function Module9() {
             <p className="mt-3 text-sm text-slate">
               Critical assumption: censored patients are assumed to have
               the same future risk as patients who remain in the study
-              &mdash; "non-informative censoring."
+             : "non-informative censoring."
             </p>
           </div>
         </section>
@@ -315,7 +315,7 @@ export default function Module9() {
               </p>
               <p className="mt-2 text-sm text-ink">
                 Indicate a censored patient. Survival probability does
-                not drop at a tick &mdash; shown as short vertical marks
+                not drop at a tick: shown as short vertical marks
                 on the curves below.
               </p>
             </div>
@@ -347,7 +347,7 @@ export default function Module9() {
           </div>
           <p className="mt-2 font-mono text-xs text-slate">
             Tick marks show where censoring is read on the curve
-            (illustrative placement &mdash; the source data reports
+            (illustrative placement: the source data reports
             survival at 6-month checkpoints, not individual patient
             censoring times).
           </p>
@@ -384,7 +384,7 @@ export default function Module9() {
         {/* Hazard ratio deep dive */}
         <section className="mt-12">
           <h2 className="font-display text-2xl font-semibold">
-            Hazard ratio &mdash; survival analysis's Relative Risk
+            Hazard ratio: survival analysis's Relative Risk
           </h2>
           <p className="mt-2 text-slate">
             The ratio of the hazard (instantaneous risk of the event) in
@@ -395,14 +395,14 @@ export default function Module9() {
               <p className="font-mono text-xs text-teal">HR = 0.50</p>
               <p className="mt-2 text-sm text-ink">
                 Treatment group has a 50% lower risk of the event at any
-                time &mdash; highly protective.
+                time: highly protective.
               </p>
             </div>
             <div className="rounded-lg border border-hairline p-5">
               <p className="font-mono text-xs text-teal">HR = 2.0</p>
               <p className="mt-2 text-sm text-ink">
                 Exposed group has twice the risk of the event at any time
-                &mdash; dangerous.
+               : dangerous.
               </p>
             </div>
           </div>
@@ -410,7 +410,7 @@ export default function Module9() {
             Interpretation pearl: unlike RR, which is cumulative risk over
             the whole study period, HR summarizes risk instantaneously
             across follow-up. Always check that the proportional hazards
-            assumption holds &mdash; the two curves shouldn't cross.
+            assumption holds: the two curves shouldn't cross.
           </p>
           <p className="mt-3 text-sm text-slate">
             Comparing two KM curves for significance uses the{" "}
