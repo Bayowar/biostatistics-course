@@ -11,11 +11,11 @@ const MODULES = [
   },
   {
     number: "02",
-    slug: null,
+    slug: "/module-2",
     title: "Distributions",
     description:
       "Central tendency, variability, the normal curve, z-scores, and regression to the mean.",
-    status: "soon",
+    status: "available",
   },
   {
     number: "03",
