@@ -302,6 +302,39 @@ export default function Module6() {
           </div>
         </section>
 
+        {/* Bayes' theorem, stated explicitly */}
+        <section className="mt-16">
+          <h2 className="font-display text-2xl font-semibold">
+            Bayes&rsquo; theorem
+          </h2>
+          <p className="mt-2 text-slate">
+            Likelihood ratios are Bayes&rsquo; theorem in disguise.
+            Written out in full, for a positive test result D given
+            disease status +:
+          </p>
+          <div className="mt-6 rounded-lg border border-hairline p-5">
+            <p className="font-mono text-sm text-ink">
+              P(+ | D) = [P(D | +) &times; P(+)] &divide; P(D)
+            </p>
+            <p className="mt-3 text-sm text-slate">
+              P(+) is the pretest probability (usually prevalence).
+              P(D | +) is the sensitivity. P(D) is the overall
+              probability of testing positive, across both diseased and
+              non-diseased patients. The output, P(+ | D), is the
+              posttest probability &mdash; your updated belief after
+              seeing the result.
+            </p>
+          </div>
+          <p className="mt-4 text-sm text-slate">
+            In practice, restating this in <strong>odds</strong> form is
+            faster to compute by hand: posttest odds = pretest odds
+            &times; likelihood ratio. That&rsquo;s exactly what the
+            calculator below does &mdash; it&rsquo;s Bayes&rsquo;
+            theorem, just in a form built for quick bedside math instead
+            of the probability form above.
+          </p>
+        </section>
+
         {/* Bayes calculator */}
         <section className="mt-16">
           <h2 className="font-display text-2xl font-semibold">

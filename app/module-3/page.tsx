@@ -3,6 +3,100 @@
 import Link from "next/link";
 import { useState } from "react";
 
+function DecisionTree() {
+  const width = 640;
+  const height = 260;
+
+  // Static illustrative tree: P(Exposed) then P(Event | Exposed status)
+  const nodes = {
+    root: { x: 40, y: height / 2, label: "Start" },
+    exposed: { x: 280, y: 60, label: "Exposed", p: 0.4 },
+    unexposed: { x: 280, y: 200, label: "Unexposed", p: 0.6 },
+    expEvent: { x: 560, y: 20, label: "Event", p: 0.25 },
+    expNoEvent: { x: 560, y: 100, label: "No event", p: 0.75 },
+    unexpEvent: { x: 560, y: 160, label: "Event", p: 0.1 },
+    unexpNoEvent: { x: 560, y: 240, label: "No event", p: 0.9 },
+  };
+
+  const edges: [keyof typeof nodes, keyof typeof nodes, number][] = [
+    ["root", "exposed", 0.4],
+    ["root", "unexposed", 0.6],
+    ["exposed", "expEvent", 0.25],
+    ["exposed", "expNoEvent", 0.75],
+    ["unexposed", "unexpEvent", 0.1],
+    ["unexposed", "unexpNoEvent", 0.9],
+  ];
+
+  return (
+    <svg
+      viewBox={`0 0 ${width} ${height}`}
+      className="w-full"
+      role="img"
+      aria-label="Decision tree showing branching probabilities from an exposure to an event"
+    >
+      {edges.map(([from, to, p], i) => {
+        const a = nodes[from];
+        const b = nodes[to];
+        const midX = (a.x + b.x) / 2;
+        const midY = (a.y + b.y) / 2;
+        return (
+          <g key={i}>
+            <line
+              x1={a.x}
+              y1={a.y}
+              x2={b.x}
+              y2={b.y}
+              stroke="var(--color-hairline)"
+              strokeWidth={2}
+            />
+            <rect
+              x={midX - 18}
+              y={midY - 10}
+              width={36}
+              height={16}
+              fill="var(--color-paper)"
+            />
+            <text
+              x={midX}
+              y={midY + 2}
+              textAnchor="middle"
+              fontSize={11}
+              fontFamily="var(--font-mono)"
+              fill="var(--color-slate)"
+            >
+              {p}
+            </text>
+          </g>
+        );
+      })}
+      {Object.entries(nodes).map(([key, n]) => {
+        const isRoot = key === "root";
+        const isFinalEvent = n.label === "Event";
+        const fill = isRoot
+          ? "var(--color-ink)"
+          : isFinalEvent
+          ? "var(--color-amber)"
+          : "var(--color-teal)";
+        return (
+          <g key={key}>
+            <circle cx={n.x} cy={n.y} r={isRoot ? 5 : 4} fill={fill} />
+            <text
+              x={n.x}
+              y={n.y - 12}
+              textAnchor="middle"
+              fontSize={12}
+              fontFamily="var(--font-mono)"
+              fill="var(--color-ink)"
+            >
+              {n.label}
+            </text>
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 export default function Module3() {
   const [heads, setHeads] = useState(0);
   const [tails, setTails] = useState(0);
@@ -55,6 +149,7 @@ export default function Module3() {
             <li>Conditional probability</li>
             <li>Addition &amp; product rules</li>
             <li>Independence</li>
+            <li>Decision trees</li>
           </ul>
         </div>
 
@@ -140,6 +235,40 @@ export default function Module3() {
           <p className="mt-2 font-mono text-xs text-slate">
             If A and B are independent, P(B | A) simplifies to just P(B).
           </p>
+        </section>
+
+        {/* Decision trees */}
+        <section className="mt-16">
+          <h2 className="font-display text-2xl font-semibold">
+            Decision trees
+          </h2>
+          <p className="mt-2 text-slate">
+            A decision tree lays the product rule out visually.
+            Each branch point is a probability; multiply the
+            probabilities along a path to get the probability of that
+            whole path. All branches leaving one node must sum to 1.
+          </p>
+
+          <div className="mt-6 rounded-lg border border-hairline bg-ink/[0.02] p-6">
+            <DecisionTree />
+          </div>
+
+          <div className="mt-4 rounded-lg border border-hairline p-5">
+            <p className="font-mono text-xs uppercase tracking-wide text-teal">
+              Reading the tree above
+            </p>
+            <p className="mt-2 text-sm text-ink">
+              P(Exposed) = 0.4. Following the top path, P(Exposed and
+              Event) = P(Exposed) &times; P(Event | Exposed) = 0.4
+              &times; 0.25 = <span className="font-mono">0.10</span>.
+              That&rsquo;s the product rule, applied one branch at a
+              time. To get the overall P(Event) across both exposure
+              groups, add up every path that ends in &ldquo;Event&rdquo;:
+              (0.4 &times; 0.25) + (0.6 &times; 0.10) ={" "}
+              <span className="font-mono">0.16</span> &mdash; the
+              addition rule, applied across the tree&rsquo;s branches.
+            </p>
+          </div>
         </section>
 
         {/* Coin flip interactive */}

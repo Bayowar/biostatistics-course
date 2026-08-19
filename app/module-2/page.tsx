@@ -73,6 +73,7 @@ export default function Module2() {
             <li>Variability</li>
             <li>The normal curve</li>
             <li>Z-scores</li>
+            <li>Interpreting graphs, tables &amp; text</li>
           </ul>
         </div>
 
@@ -267,6 +268,76 @@ export default function Module2() {
                 but because extremes are partly due to chance.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Interpreting data: graphs, tables, text */}
+        <section className="mt-16">
+          <h2 className="font-display text-2xl font-semibold">
+            Interpreting data: graphs, tables &amp; text
+          </h2>
+          <p className="mt-2 text-slate">
+            The same finding can be presented three ways in the
+            literature. Knowing what each format hides and reveals is its
+            own skill, separate from the statistics underneath it.
+          </p>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-lg border border-hairline p-5">
+              <p className="font-mono text-xs uppercase tracking-wide text-teal">
+                Graphs
+              </p>
+              <p className="mt-2 text-sm text-ink">
+                Read the axes and their units first, before the shape.
+                A histogram shows distribution shape and skew; a box
+                plot shows median, IQR, and outliers at a glance; a
+                scatter plot shows the relationship between two
+                continuous variables. Watch for truncated y-axes:
+                they can make a small difference look dramatic.
+              </p>
+            </div>
+            <div className="rounded-lg border border-hairline p-5">
+              <p className="font-mono text-xs uppercase tracking-wide text-teal">
+                Tables
+              </p>
+              <p className="mt-2 text-sm text-ink">
+                Check what each row and column represents before reading
+                any single cell. A 2&times;2 table (like the ones in
+                Modules 4&ndash;6) organizes exposure/outcome or
+                test/disease status; a summary table usually reports n,
+                a central tendency measure, and a spread measure per
+                group &mdash; confirm which ones before comparing across
+                rows.
+              </p>
+            </div>
+            <div className="rounded-lg border border-hairline p-5">
+              <p className="font-mono text-xs uppercase tracking-wide text-teal">
+                Text
+              </p>
+              <p className="mt-2 text-sm text-ink">
+                Watch for language that implies more than the data
+                shows. &ldquo;Associated with&rdquo; is not
+                &ldquo;causes.&rdquo; &ldquo;Trend toward
+                significance&rdquo; usually means p &gt; 0.05 &mdash;
+                it didn&rsquo;t reach significance. &ldquo;Significantly
+                greater&rdquo; on its own, without a p-value or CI
+                reported nearby, is a claim to read skeptically.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 rounded-lg border border-hairline bg-ink/[0.02] p-5">
+            <p className="font-mono text-xs uppercase tracking-wide text-amber">
+              Reading pearl
+            </p>
+            <p className="mt-2 text-sm text-slate">
+              Before trusting any of the three formats, ask: what&rsquo;s
+              the sample size, what&rsquo;s being compared to what, and
+              is the effect size reported alongside the p-value? A
+              result can be presented cleanly in a graph, table, or
+              sentence and still be incomplete without those three
+              answers.
+            </p>
           </div>
         </section>
 

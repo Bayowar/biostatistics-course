@@ -114,7 +114,7 @@ export default function Module8() {
           </p>
           <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs text-slate">
             <li>Correlation coefficient</li>
-            <li>Multiple regression</li>
+            <li>Multiple regression &amp; confounding</li>
             <li>Statistical vs. clinical significance</li>
           </ul>
         </div>
@@ -207,6 +207,62 @@ export default function Module8() {
                 to get an adjusted odds ratio.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Confounding */}
+        <section className="mt-12">
+          <h2 className="font-display text-2xl font-semibold">
+            Confounding
+          </h2>
+          <p className="mt-2 text-slate">
+            A confounder is a third variable associated with{" "}
+            <strong>both</strong> the exposure and the outcome, but not
+            on the causal pathway between them. Left unadjusted, it
+            distorts the apparent exposure&ndash;outcome relationship
+            &mdash; multiple regression&rsquo;s main job is removing
+            that distortion.
+          </p>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-lg border border-hairline p-5">
+              <p className="font-mono text-xs uppercase tracking-wide text-teal">
+                Criteria for a confounder
+              </p>
+              <p className="mt-2 text-sm text-ink">
+                Associated with the exposure, associated with the
+                outcome independent of the exposure, and not a step in
+                the causal chain between them (i.e. not a mediator).
+              </p>
+            </div>
+            <div className="rounded-lg border border-hairline p-5">
+              <p className="font-mono text-xs uppercase tracking-wide text-teal">
+                Confounder vs. effect modifier
+              </p>
+              <p className="mt-2 text-sm text-ink">
+                A confounder distorts the estimate &mdash; adjust it
+                away. An effect modifier means the exposure genuinely
+                behaves differently across subgroups &mdash; don&rsquo;t
+                adjust it away, report it (e.g. stratified estimates).
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 rounded-lg border border-hairline bg-ink/[0.02] p-5">
+            <p className="font-mono text-xs uppercase tracking-wide text-amber">
+              Classic example
+            </p>
+            <p className="mt-2 text-sm text-slate">
+              Coffee drinking looks associated with lung cancer in
+              unadjusted data &mdash; but smoking is associated with
+              both coffee drinking and lung cancer, and isn&rsquo;t on
+              the causal path from coffee to cancer. Once you adjust
+              for smoking, most or all of the coffee&ndash;cancer
+              association disappears. That adjustment is exactly what
+              a multiple regression coefficient does automatically: the
+              sodium coefficient below is already &ldquo;adjusted
+              for&rdquo; age and BMI as potential confounders.
+            </p>
           </div>
         </section>
 
