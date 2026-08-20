@@ -18,3 +18,35 @@ body {
   color: var(--color-ink);
   font-family: var(--font-body);
 }
+
+/* Presentation mode: one section fills the viewport at a time */
+body.presenting {
+  overflow: hidden;
+}
+
+body.presenting main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem; /* room for the control bar */
+}
+
+body.presenting main > div.mx-auto {
+  max-height: 88vh;
+  overflow-y: auto;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+body.presenting main > div.mx-auto > section {
+  margin-top: 0 !important;
+}
+
+body.presenting main > div.mx-auto > div:first-child {
+  margin-top: 0 !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
